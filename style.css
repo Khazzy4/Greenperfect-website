@@ -1,0 +1,1395 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+  @font-face {
+    font-family: 'Evolventa';
+    src: url('/fonts/evolventa.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Evolventa_bold';
+  src: url('/fonts/evolventa_bold.ttf') format('truetype');
+}
+
+
+
+body {
+    margin: 0;
+    background-color: #011b1a;
+  }
+  
+  #top-header {
+    margin: 0 ;
+    max-width: 100%;
+  }
+  
+  #nav {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+  }
+  
+  #logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  #logo h1 {
+    font-size: 20px;
+    color: #c6ffca;
+    font-family: 'Evolventa_bold', sans-serif;
+    text-decoration: none;
+    white-space: nowrap;
+    min-width: 10%;
+    text-transform: lowercase;
+    margin-right: 10rem;
+    margin-left: 2rem;
+
+
+  }
+
+
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: 'Evolventa_bold', sans-serif;
+    color: #ffffff;
+    list-style-type: none;
+  }
+  
+
+  li {
+    text-decoration: none;
+    position: relative;
+    display: flex; /* Added */
+    align-items: center; /* Added */
+    justify-content: right;
+  }
+  
+  li a span {
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 30%;
+    padding: 0.6rem 4.8rem; /* Adjust the padding as per your preference */
+    color: #000000;
+    max-width: 100%;
+    overflow: hidden;
+    
+  }
+  
+
+  li #facebook {
+    max-width: 30px;
+    margin-right: 0.7rem;
+    margin-right: 4.7rem
+  }
+
+  li #WhatsApp {
+    max-width: 30px;
+    margin-right: 2rem;
+  }
+
+  li #call_us {
+    max-width: 250px;
+    margin-right: 30px;
+    
+  }
+ 
+  #header {
+    display: flex;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  #header_1 {
+    display: flex;
+  }
+  
+  #images_inside {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    padding: 0 210px;
+
+  }
+  
+  #jsme-uklidova {
+    font-family: 'Evolventa_bold', sans-serif;
+    color: white;
+    margin-top: 20px;
+    padding: 0;
+    margin-bottom: -8px;
+    text-transform: uppercase;
+    font-size: 90px;
+    margin-left: 150px;
+
+  }
+  
+  #jsme-uklidova #stars_jsme {
+    max-width: 80px;
+  }
+
+
+  #firma {
+    text-transform: uppercase;
+    font-family: 'Evolventa_bold', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 90px;
+    text-align: left;
+    line-height: 0.99; /* Уменьшите это значение для уменьшения интервала между строками */
+    color: #ffffff;
+  }
+  
+  .green-text {
+    color: #c6ffca;
+  }
+
+ #cisty_domov {
+    display: flex;
+    text-transform: lowercase;
+    font-family: 'Evolventa', sans-serif;
+    color: white;
+    font-weight: lighter;
+    justify-content: right;
+    font-size: 20px;
+    margin-top: 463px;
+ }
+
+ #header_stars{
+    margin-top: 433px;
+    margin-left: 50px;
+ }
+
+ #scroll-down {
+    display: flex;
+    max-width: 100%;
+ }
+
+ #About-Us {
+  width: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+}
+
+#marquee-setion {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: row;
+  align-items: center;
+  overflow: hidden;
+  gap: 6rem;
+}
+
+.marquee {
+  user-select: none;
+  font-size: 3rem;
+  font-family: 'Evolventa', sans-serif;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  white-space: nowrap;
+  animation: marquee 8s linear infinite;
+  
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+  
+  #About-Us_blocks {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+
+  }
+  
+  .block {
+    background-color: #011b1a;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin: 20px 74px;
+
+  }
+  
+  .block img {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    max-width: 80%;
+    min-width: 60%;
+
+    border-radius: 5px;
+
+  }
+  
+  .block p {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #c6ffca;
+    font-family: 'Evolventa_bold', sans-serif;
+
+  }
+
+  
+
+  #first_place {
+    display: flex;
+    background-color: #c6ffca;
+    justify-content: flex-end; /* Выравнивание контента в правой части */
+  }
+  
+  #second_place {
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+  }
+  
+  #prvnim {
+    display: flex;
+    font-family: 'Evolventa_bold', sans-serif;
+    color: #011b1a;
+    margin-top: 80px;
+    padding: 0;
+    margin-bottom: 1px;
+    font-size: 38px;
+    margin-left: 138px;
+  }
+  
+  #maximální {
+    display: flex;
+    font-family: 'Evolventa_bold', sans-serif;
+    color: #011b1a;
+    margin: 0;
+    padding: 0;
+    font-size: 38px;
+    text-align: left;
+    line-height: 1.5;
+    margin-bottom: 80px;
+  }
+  
+
+  #useful_1 {
+    display: flex;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0 ;
+
+  }
+  
+
+
+
+  #useful {
+    display: flex;
+    background-color: #011b1a;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .block_useful {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    margin: 0 px;
+  }
+
+  .block_useful img {
+    max-width: 10%;
+
+  }
+  
+  .block_useful h2 {
+    font-size: 2.2rem;
+    position: absolute;
+
+    transform: translate(-100%, -220%);
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Evolventa', sans-serif;
+    font-weight: bold;
+  }
+
+  .block_useful #cleaning_h2 {
+    font-size: 2.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-95%, -220%);
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Evolventa', sans-serif;
+    font-weight: bold;
+  }
+
+  .block_useful #relax_h2 {
+    font-size: 2.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-160%, -220%);
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Evolventa', sans-serif;
+    font-weight: bold;
+  }
+  
+  .block_useful p {
+    font-size: 0.6rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-71%, -10%);
+    text-align: left;
+    color: #c6ffca;
+    font-family: 'Evolventa', sans-serif;
+    font-weight: bold;
+  }
+  
+  .block_useful #relax_p {
+    font-size: 0.6rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-72%, -10%);
+    text-align: left;
+    color: #c6ffca;
+    font-family: 'Evolventa', sans-serif;
+    font-weight: bold;
+  }
+
+  .block_useful #cleaning_p {
+    font-size: 0.6rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-73%, -10%);
+    text-align: left;
+    color: #c6ffca;
+    font-family: 'Evolventa_bold', sans-serif;
+
+  }
+  
+  .block_useful img {
+    margin-top: 30px;
+    align-items: center;
+    justify-self: center;
+    max-width: 100%;
+    border-radius: 10%;
+    align-self: center;
+  }
+
+  .block_useful_1 img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-self: center;
+    max-width: 100%;
+    border-radius: 10%;
+    align-self: center;
+  }
+
+  .block_useful_1 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    margin: 0 px;
+  }
+
+
+  
+
+  #price {
+    display: flex;
+    background-color: #ffffff;
+    text-align: right;
+    align-items: right;
+    justify-content: right
+  }
+
+  .price-content {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: right;
+    margin-right: 285px;
+  } 
+
+  #price h2 {
+    font-family: 'Evolventa_bold', sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 60px;
+    font-size: 32px;
+
+  }
+
+  #price #cenovou {
+    font-family: 'Evolventa_bold', sans-serif;
+    margin: 0;
+    margin-right: 265px;
+    margin-bottom: 20px;
+
+
+  }
+  
+  #price #price_png {
+    margin-right: 310px;
+
+    max-width: 30%;
+
+  }
+
+  #plan {
+    display: flex;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: right;
+    padding-bottom: 90px;
+
+
+  }
+  
+  #nav_plan {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: auto; 
+    align-items: center;
+    justify-content: center;
+  }
+
+  #nav_plan1, #nav_plan2, #nav_plan3, #nav_plan4, #nav_plan5 {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  
+  #nav_plan img {
+  margin-right:75px;
+  max-width: 9%;
+  align-items: center;
+  justify-content: center;
+  
+  }
+
+
+    
+#nav_plan1 p{
+        display: flex;
+        margin-right: 440px;
+        font-family: 'Evolventa_bold', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.875rem;
+      }
+        
+#nav_plan2 p{
+        display: flex;
+        margin-right: 310px;
+        font-family: 'Evolventa_bold', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.875rem;
+      }
+
+#nav_plan3 p{
+        display: flex;
+        margin-right: 345px;
+        font-family: 'Evolventa_bold', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.875rem;
+      }
+
+
+#nav_plan4 p{
+        display: flex;
+        margin-right: 140px;
+        font-family: 'Evolventa_bold', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.875rem;
+      }
+
+#nav_plan5 p{
+        display: flex;
+        margin-right: 335px;
+        font-family: 'Evolventa_bold', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.875rem;
+      }
+
+#nav_plan h3 {
+    margin-right: 20px;
+    font-family: 'Evolventa', sans-serif;
+    font-weight:lighter;
+    color:#011b1a;
+
+}
+
+#jak {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-bottom: 305px;
+
+}
+
+#jak p {
+    display: flex;
+    font-family: 'Evolventa', sans-serif;
+    font-weight:500;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+#jak img {
+    display: flex;
+    max-width: 15%;
+    margin-right: 15px;
+}
+
+footer {
+color: #011b1a;
+
+}
+
+#contacts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+footer h2 {
+    font-family: 'Evolventa', sans-serif;
+    font-weight:lighter;
+    color: #ffffff;
+    text-transform: lowercase;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin: 0 70px;
+    margin-top: 120px;
+    text-decoration: none;
+
+}
+
+.line {
+    border-top: 1px solid rgb(255, 255, 255);
+    max-width: 100%;
+    margin: 0 150px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  footer h3 {
+    font-family: 'Evolventa_bold', sans-serif;
+    color: #c6ffca;
+    text-transform: lowercase;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+    font-size: 10rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-bottom: 50px;
+  }
+
+
+  @media screen and (max-width: 1632px) {
+
+    #images_inside {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        position: relative;
+        padding: 0 210px;
+    
+      }
+      
+      #jsme-uklidova {
+        font-family: 'Evolventa_bold', sans-serif;
+        color: white;
+        margin-top: 20px;
+        padding: 0;
+        margin-bottom: -8px;
+        text-transform: uppercase;
+        font-size: 70px;
+        margin-left: 150px;
+    
+      }
+      
+      #jsme-uklidova #stars_jsme {
+        max-width: 70px;
+      }
+    
+    
+      #firma {
+        text-transform: uppercase;
+        font-family: 'Evolventa_bold', sans-serif;
+        color: white;
+        margin: 0;
+        padding: 0;
+        font-size: 70px;
+        text-align: left;
+        line-height: 0.99; /* Уменьшите это значение для уменьшения интервала между строками */
+        color: #ffffff;
+      }
+      
+      .green-text {
+        color: #c6ffca;
+      }
+    
+     #cisty_domov {
+        display: flex;
+        text-transform: lowercase;
+        font-family: 'Evolventa', sans-serif;
+        color: white;
+        font-weight: lighter;
+        justify-content: right;
+        font-size: 16px;
+        margin-top: 380px;
+        margin-right: 20px;
+     }
+    
+     #header_stars{
+        margin-top: 345px;
+        margin-left: 50px;
+     }
+
+     footer h3 {
+      font-family: 'Evolventa_bold', sans-serif;
+        color: #c6ffca;
+        text-transform: lowercase;
+        align-items: center;
+        justify-content: center;
+        margin-left: 150px;
+        font-size: 7rem;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+
+      .line {
+        border-top: 1px solid rgb(255, 255, 255);
+        max-width: 100%;
+        margin: 0 150px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+      }
+
+  }
+
+  @media screen and (max-width: 1445px) {
+
+    #images_inside {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        position: relative;
+        padding: 0 100px;
+    
+      }
+      
+      #jsme-uklidova {
+        font-family: 'Evolventa_bold', sans-serif;
+        color: white;
+        margin-top: 20px;
+        padding: 0;
+        margin-bottom: -8px;
+        text-transform: uppercase;
+        font-size: 70px;
+        margin-left: 150px;
+    
+      }
+      
+      #jsme-uklidova #stars_jsme {
+        max-width: 70px;
+      }
+    
+    
+      #firma {
+        text-transform: uppercase;
+        font-family: 'Evolventa_bold', sans-serif;
+        color: white;
+        margin: 0;
+        padding: 0;
+        font-size: 70px;
+        text-align: left;
+        line-height: 0.99; /* Уменьшите это значение для уменьшения интервала между строками */
+        color: #ffffff;
+      }
+      
+      .green-text {
+        color: #c6ffca;
+      }
+    
+     #cisty_domov {
+        display: flex;
+        text-transform: lowercase;
+        font-family: 'Evolventa', sans-serif;
+        color: white;
+        font-weight: lighter;
+        justify-content: right;
+        font-size: 16px;
+        margin-top: 375px;
+        margin-right: 50px;
+     }
+
+
+    
+     #header_stars{
+        margin-top: 340px;
+        margin-left: 90px;
+     }
+
+     li #facebook {
+        max-width: 30px;
+        margin-right: 0.7rem;
+        margin-right: 3rem
+      }
+
+      footer h3 {
+        font-family: 'Evolventa_bold', sans-serif;
+        color: #c6ffca;
+        text-transform: lowercase;
+        align-items: center;
+        justify-content: center;
+        margin-left: 150px;
+        font-size: 6.5rem;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+
+      #second_place {
+        display: flex;
+        flex-direction: column;
+        margin-right: 80px;
+      }
+
+      
+    .price-content {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        text-align: right;
+        margin-right: 265px;
+    } 
+
+
+  }
+
+  @media screen and (max-width: 1284px) {
+
+    #jsme-uklidova {
+      font-family: 'Evolventa_bold', sans-serif;
+      color: white;
+      margin-top: 20px;
+      padding: 0;
+      margin-bottom: -8px;
+      text-transform: uppercase;
+      font-size: 65px;
+      margin-left: 150px;
+  
+    }
+    
+    #jsme-uklidova #stars_jsme {
+      font-size: 60px;
+    }
+  
+  
+    #firma {
+      text-transform: uppercase;
+      font-family: 'Evolventa_bold', sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+      font-size: 65px;
+      text-align: left;
+      line-height: 0.99; /* Уменьшите это значение для уменьшения интервала между строками */
+      color: #ffffff;
+    }
+
+    #cisty_domov {
+      display: flex;
+      text-transform: lowercase;
+      font-family: 'Evolventa', sans-serif;
+      color: white;
+      font-weight: lighter;
+      justify-content: right;
+      font-size: 16px;
+      margin-top: 355px;
+      margin-right: 50px;
+   }
+
+   #header_stars{
+      margin-top: 320px;
+      margin-left: 90px;
+   }
+
+   .marquee {
+    user-select: none;
+    font-size: 2.4rem;
+    font-family: 'Evolventa', sans-serif;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    white-space: nowrap;
+    /* animation: marquee 8s linear infinite; */
+    
+  }
+
+  }
+
+  @media screen and (max-width: 1246px) {
+
+    #jsme-uklidova {
+      font-family: 'Evolventa_bold', sans-serif;
+      color: white;
+      margin-top: 20px;
+      padding: 0;
+      margin-bottom: -8px;
+      text-transform: uppercase;
+      font-size: 60px;
+      margin-left: 150px;
+  
+    }
+    
+    #jsme-uklidova #stars_jsme {
+      font-size: 60px;
+    }
+  
+  
+    #firma {
+      text-transform: uppercase;
+      font-family: 'Evolventa_bold', sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+      font-size: 60px;
+      text-align: left;
+      line-height: 0.99; /* Уменьшите это значение для уменьшения интервала между строками */
+      color: #ffffff;
+    }
+
+    #cisty_domov {
+      display: flex;
+      text-transform: lowercase;
+      font-family: 'Evolventa', sans-serif;
+      color: white;
+      font-weight: lighter;
+      justify-content: right;
+      font-size: 14px;
+      margin-top: 340px;
+      margin-right: 50px;
+   }
+
+   #header_stars{
+      margin-top: 310px;
+      margin-left: 90px;
+      width: 70px;
+   }
+
+  }
+
+@media screen and (max-width: 1176px) {
+    #images_inside {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        position: relative;
+        padding: 0 100px;
+    
+      }
+      
+      #jsme-uklidova {
+        font-family: 'Evolventa_bold', sans-serif;
+        color: white;
+        margin-top: 20px;
+        padding: 0;
+        margin-bottom: 1px;
+        text-transform: uppercase;
+        font-size: 50px;
+        margin-left: 150px;
+        line-height: 0.99; /* Уменьшите это значение для уменьшения интервала между строками */
+
+      }
+      
+      #jsme-uklidova #stars_jsme {
+        max-width: 45px;
+      }
+    
+    
+      #firma {
+        text-transform: uppercase;
+        font-family: 'Evolventa_bold', sans-serif;
+        color: white;
+        margin: 0;
+        padding: 0;
+        font-size: 50px;
+        text-align: left;
+        line-height: 0.99; /* Уменьшите это значение для уменьшения интервала между строками */
+        color: #ffffff;
+      }
+      
+      .green-text {
+        color: #c6ffca;
+      }
+    
+     #cisty_domov {
+        display: flex;
+        text-transform: lowercase;
+        font-family: 'Evolventa', sans-serif;
+        color: white;
+        font-weight: lighter;
+        justify-content: right;
+        font-size: 16px;
+        margin-top: 280px;
+        margin-right: 50px;
+     }
+    
+     #header_stars{
+        margin-top: 240px;
+        margin-left: 90px;
+     }
+
+     li #facebook {
+        max-width: 30px;
+        margin-right: 0.7rem;
+        margin-right: 3rem
+      }
+
+      #About-Us_blocks {
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+    
+      }
+
+    /* .block {
+    background-color: #011b1a;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin: 20px 144px;
+
+  }
+  
+  .block img {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    max-width: 80%;
+    min-width: 80%;
+    border-radius: 5px;
+
+  }
+  
+  .block p {
+    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 170%;
+    color: #c6ffca;
+    font-family: 'Evolventa_bold', sans-serif;
+  } */
+
+
+  #useful_1 {
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: column;
+    padding: 50px 0;
+
+  }
+  
+  .block_useful {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 50px;
+
+  }
+
+  .block_useful img {
+    /* display: flex; */
+    width: 65%;
+
+  }
+
+  .block_useful_1 img {
+    /* display: flex; */
+    width: 65%;
+
+  }
+
+  #useful {
+    display: flex;
+    background-color: #011b1a;
+    flex-direction: column;
+    margin: 50px 0;
+
+  }
+  
+  .block_useful {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 50px;
+
+  }
+
+  .block_useful img {
+    max-width: 75%;
+
+  }
+
+      
+    #plan {
+        display: flex;
+        background-color: #ffffff;
+        align-items: center;
+        justify-content: right;
+        padding-bottom: 90px;
+    
+    
+      }
+      
+      #nav_plan {
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+        margin-left: auto; 
+    
+      }
+    
+      #nav_plan1, #nav_plan2, #nav_plan3, #nav_plan4, #nav_plan5 {
+        display: flex;
+        align-items: center;
+      }
+      
+    
+      
+      #nav_plan img {
+      margin-right:75px;
+      max-width: 9%;
+      
+      }
+    
+    
+        
+    #nav_plan1 p{
+            display: flex;
+            margin-right: 320px;
+            font-family: 'Evolventa_bold', sans-serif;
+            text-transform: uppercase;
+            font-size: 1.8rem;
+          }
+            
+    #nav_plan2 p{
+            display: flex;
+            margin-right: 200px;
+            font-family: 'Evolventa_bold', sans-serif;
+            text-transform: uppercase;
+            font-size: 1.8rem;
+          }
+    
+    #nav_plan3 p{
+            display: flex;
+            margin-right: 248px;
+            font-family: 'Evolventa_bold', sans-serif;
+            text-transform: uppercase;
+            font-size: 1.8rem;
+          }
+    
+    
+    #nav_plan4 p{
+            display: flex;
+            margin-right: 37px;
+            font-family: 'Evolventa_bold', sans-serif;
+            text-transform: uppercase;
+            font-size: 1.8rem;
+          }
+    
+    #nav_plan5 p{
+            display: flex;
+            margin-right: 225px;
+            font-family: 'Evolventa_bold', sans-serif;
+            text-transform: uppercase;
+            font-size: 1.8rem;
+          }
+    
+    #nav_plan h3 {
+        margin-right: 20px;
+        font-family: 'Evolventa', sans-serif;
+        font-weight:lighter;
+        color:#011b1a;
+    
+    }
+    
+    #jak {
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+        margin-bottom: 480px;   
+    
+    }
+    
+    #jak p {
+        display: flex;
+        font-family: 'Evolventa', sans-serif;
+        font-weight:lighter;
+        font-size: 1.4rem;
+        line-height: 1;
+    }
+    
+    #jak img {
+        display: flex;
+        max-width: 13%;
+        margin-right: 15px;
+    }
+
+    footer h3 {
+      font-family: 'Evolventa_bold', sans-serif;
+        color: #c6ffca;
+        text-transform: lowercase;
+        align-items: center;
+        justify-content: center;
+        margin-left: 150px;
+        font-size: 6rem;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-right: 80px;
+      }
+
+      .price-content {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        text-align: right;
+        margin-right: 140px;
+    } 
+
+}
+  
+
+
+  @media screen and (max-width: 1108px) {
+
+    #images_inside {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        position: relative;
+        padding: 0 80px;
+    
+      }
+      
+      #jsme-uklidova {
+        font-family: 'Evolventa_bold', sans-serif;
+        color: white;
+        margin-top: 20px;
+        padding: 0;
+        margin-bottom: 1px;
+        text-transform: uppercase;
+        font-size: 50px;
+        margin-left: 150px;
+    
+      }
+      
+      #jsme-uklidova #stars_jsme {
+        max-width: 45px;
+      }
+    
+    
+      #firma {
+        text-transform: uppercase;
+        font-family: 'Evolventa_bold', sans-serif;
+        color: white;
+        margin: 0;
+        padding: 0;
+        font-size: 48px;
+        text-align: left;
+        line-height: 0.99; /* Уменьшите это значение для уменьшения интервала между строками */
+        color: #ffffff;
+      }
+      
+      .green-text {
+        color: #c6ffca;
+      }
+    
+     #cisty_domov {
+        display: flex;
+        text-transform: lowercase;
+        font-family: 'Evolventa', sans-serif;
+        color: white;
+        font-weight: lighter;
+        justify-content: right;
+        font-size: 13px;
+        margin-top: 263px;
+        margin-right: 40px;
+     }
+    
+     #header_stars{
+        margin-top: 233px;
+        margin-left: 70px;
+        width: 70px;
+     }
+     
+     li #facebook {
+        max-width: 30px;
+        margin-right: 0.7rem;
+        margin-right: 3rem
+      }
+  }
+
+
+  @media screen and (max-width: 996px) {
+     
+  @font-face {
+      font-family: 'Evolventa';
+      src: url('/fonts/evolventa.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Evolventa_bold';
+    src: url('/fonts/evolventa_bold.ttf') format('truetype');
+  }
+  
+    .price-content {
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      text-align: right;
+      margin-right: 110px;
+  } 
+
+    #images_inside {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        position: relative;
+        padding-left:  30px;
+        padding-right: 20px;
+    
+      }
+      
+      #jsme-uklidova {
+        font-family: 'Evolventa_bold', sans-serif;
+        color: white;
+        margin-top: 20px;
+        padding: 0;
+        margin-bottom: 2px;
+        text-transform: uppercase;
+        font-size: 50px;
+        margin-left: 150px;
+    
+      }
+      
+      #jsme-uklidova #stars_jsme {
+        max-width: 40px;
+      }
+    
+    
+      #firma {
+        text-transform: uppercase;
+        font-family: 'Evolventa_bold', sans-serif;
+        color: white;
+        margin: 0;
+        padding: 0;
+        font-size: 50px;
+        text-align: left;
+        line-height: 0.99; /* Уменьшите это значение для уменьшения интервала между строками */
+        color: #ffffff;
+      }
+      
+      .green-text {
+        color: #c6ffca;
+      }
+    
+     #cisty_domov {
+        display: flex;
+        text-transform: lowercase;
+        font-family: 'Evolventa', sans-serif;
+        color: white;
+        font-weight: lighter;
+        justify-content: right;
+        font-size: 13px;
+        margin-top: 272px;
+        margin-right: 40px;
+     }
+    
+     #header_stars{
+        margin-top: 253px;
+        margin-right: 30px;
+
+     }
+
+     #scroll-down {
+        display: flex;
+       max-width: 80%;
+
+     }
+     li #facebook {
+        max-width: 30px;
+        margin-right: 0.7rem;
+        margin-right: 3rem
+      }
+
+      li #call_us {
+        max-width: 200px;
+        margin-right: 0;
+      }
+
+      .marquee {
+        user-select: none;
+        font-size: 2.2rem;
+        font-family: 'Evolventa', sans-serif;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: space-around;
+        white-space: nowrap;
+        /* animation: marquee 8s linear infinite; */
+        
+      }
+      
+  }
+
